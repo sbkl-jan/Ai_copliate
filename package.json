@@ -1,0 +1,26 @@
+{
+  "name": "ai-business-copilot",
+  "version": "1.0.0",
+  "description": "Enterprise AI Business Copilot and Autonomous Workflow Agent",
+  "private": true,
+  "scripts": {
+    "bootstrap": "npm install",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:ai": "npm run dev --workspace=microservices/ai-agent-service",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "test:backend": "npm run test --workspace=backend",
+    "test:frontend": "npm run test --workspace=workspace"
+  },
+  "workspaces": [
+    "frontend",
+    "backend",
+    "microservices/ai-agent-service"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Antigravity AI",
+  "license": "MIT"
+}
